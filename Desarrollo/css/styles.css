@@ -315,6 +315,7 @@ iframe {
 }
 .miller-collection {
 	color: rgb(255, 0, 0);
+	text-shadow: 2px 2px #000000;
 }
 @media screen and (min-width: 1020px) {
 	.tab {
