@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		<title>Colleciones - Andy Warhol</title>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<a href="index.html" class="logo nav-link"
+					>Andy Warhl<img id="nav-img" src="Images/andywarhol copy.png" />l</a
+				>
+				<button class="nav-toggle" aria-label="Abrir menú">
+					<i class="fas fa-bars"></i>
+				</button>
+				<ul class="nav-menu">
+					<li class="nav-menu-item">
+						<a href="fallecimiento.html" class="nav-menu-link nav-link"
+							>Fallecimiento</a
+						>
+					</li>
+					<li class="nav-menu-item">
+						<a href="colleccion.html" class="nav-menu-link nav-link"
+							>Collección</a
+						>
+					</li>
+					<li class="nav-menu-item">
+						<a href="negocio.html" class="nav-menu-link nav-link">Arte</a>
+					</li>
+					<li class="nav-menu-item">
+						<a href="aprender.html" class="nav-menu-link nav-link">Más</a>
+					</li>
+					<li class="nav-menu-item">
+						<a
+							href="contacto.html"
+							class="nav-menu-link nav-link nav-menu-link_active"
+							>Contácto</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="wrapper">
+			<h2>Miller Collection</h2>
+			<p>
+				Las obras que se muestran a continuación se encuentran actualmente en
+				exhibición en The Miller Galería
+			</p>
+
+			<!-- Links TABS -->
+			<div class="tab">
+				<button
+					id="girl_in_park"
+					class="tablinks"
+					onclick="openAndysCollection(event, '1')"
+				>
+					Girl in Park
+				</button>
+				<button class="tablinks" onclick="openAndysCollection(event, '2')">
+					Letters
+				</button>
+				<button class="tablinks" onclick="openAndysCollection(event, '3')">
+					Why Pick On Me
+				</button>
+				<button class="tablinks" onclick="openAndysCollection(event, '4')">
+					Passport
+				</button>
+				<button class="tablinks" onclick="openAndysCollection(event, '5')">
+					Roy Rogers
+				</button>
+				<button class="tablinks" onclick="openAndysCollection(event, '6')">
+					Success in NY
+				</button>
+				<button class="tablinks" onclick="openAndysCollection(event, '7')">
+					Untitled (Woman)
+				</button>
+			</div>
+			<!-- Tab content -->
+			<div id="1" class="tabcontent">
+				<img
+					src="Images/girl_in_park.jpeg"
+					alt="Girl in Park"
+					class="andy-img"
+				/>
+				<h1>Girl in Park</h1>
+				<p>Tempera on board, 25 x 20 in, 1948</p>
+			</div>
+
+			<div id="2" class="tabcontent">
+				<img src="Images/letter.jpeg" alt="Letter" class="andy-img" />
+				<h1>Letter to Russell Lynes</h1>
+				<p>
+					Andy Warhol letter to Russell Lynes, 1949. <br /><br />
+					Physical Details: <br />Letter: 1 p. handwritten, ill. ; 28 x 22 cm.
+					<br />Sender: Andy Warhol (1928-1987). Recipient: Russell Lynes
+					(1910-1991). <br /><br />Description:<br />Warhol provides a few of
+					his biographical details.
+				</p>
+				<p>
+					The introduction to the letter is enclosed in a speech bubble coming
+					from a cartoon head drawn in black ink.<br /><br />Source: Andy Warhol
+					letter to Russell Lynes, 1949. Harper's Magazine records kept by
+					managing editor Russell Lynes, Archives of American Art, Smithsonian
+					Institution.
+				</p>
+			</div>
+
+			<div id="3" class="tabcontent">
+				<img src="Images/nosepicker1.jpeg" alt="Why Pick on Me" />
+				<h1>Why Pick on Me</h1>
+				<p>
+					Why Pick on Me (originally titled The Lord Gave Me My Face but I Can
+					Pick My Own Nose) (ca. 1948). Tempera on board. The Andy Warhol
+					Museum, Pittsburgh; Museum Loan, Paul Warhola Family<br /><br />Source:
+					The Andy Warhol Foundation for the Visual Arts, Inc.
+				</p>
+			</div>
+			<div id="4" class="tabcontent">
+				<img src="Images/passport.jpeg" alt="Passport" class="andy-img" />
+				<h1>Passport Photographs</h1>
+				<p>
+					Self-Portrait (Passport Photographs, one with Altered Nose) (ca.
+					1956). The Andy Warhol Museum, Pittsburgh; Founding Collection,
+					Contribution The Andy Warhol Foundation for the Visual Arts, Inc. ©
+					The Andy Warhol Foundation for the Visual Arts, Inc.
+				</p>
+			</div>
+			<div id="5" class="tabcontent">
+				<img src="Images/roy_rogers.jpeg" alt="Roy Rogers" class="andy-img" />
+
+				<h1>Untitled (Roy Rogers)</h1>
+				<p>
+					c. 1948. Pencil on paper, 11 x 8 1/2" (28 x 22 cm). Chief Curator
+					Discretionary Fund. &copy; 2012 Andy Warhol Foundation for the Visual
+					Arts / Artists Rights Society (ARS), New York
+				</p>
+			</div>
+			<div id="6" class="tabcontent">
+				<img
+					src="Images/successinny.jpeg"
+					alt="Success in NY"
+					class="andy-img"
+				/>
+
+				<h1>Success is a Job in New York</h1>
+				<p>
+					Success is a Job in New York. Illustration by Andy Warhol on tearsheet
+					for Success is a Job in New York from What is Success, Glamour
+					Magazine, September 1949. Printed ink on paper 12 1/4 x 8 7/8 in.
+					(31.1 x 22.5 cm.)
+				</p>
+				<p>
+					Read more at
+					<a
+						href="http://www.warhol.org/collection/aboutandy/biography/successisajob/1998-3-2453/#ixzz26kTfJDDz"
+						target="_blank"
+						>warhol.org</a
+					>.
+				</p>
+			</div>
+			<div id="7" class="tabcontent">
+				<img
+					src="Images/untitled_woman.jpeg"
+					alt="Untitled (Woman)"
+					class="andy-img"
+				/>
+				<h1>Untitled (Woman)</h1>
+				<p>
+					(c. 1946). Pencil on paper, 11 x 8 1/2" (28 x 21.6 cm). Purchased with
+					funds given by Sally and Wynn Kramarsky. &copy; 2012 Andy Warhol
+					Foundation for the Visual Arts / Artists Rights Society (ARS), New
+					York
+				</p>
+			</div>
+			<p>
+				&copy; Jacobo, 2022. Fotografías &copy;
+				<a href="http://warhol.org" target="_blank">The Warhol Museum</a> a
+				menos que se indique lo contrario.
+			</p>
+		</div>
+	</body>
+
+	<script defer src="./js/index.js"></script>
+	<script
+		src="https://kit.fontawesome.com/7e5b2d153f.js"
+		crossorigin="anonymous"
+	></script>
+	<script>
+		window.onload = function () {
+			document.getElementById('girl_in_park').click();
+		};
+	</script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		<title>Aprender - Andy Warhol</title>
+	</head>
+	<body>
+        <header class="header">
+            <nav class="nav">
+              <a href="index.html" class="logo nav-link">Andy Warhl<img id="nav-img" src="Images/andywarhol copy.png"/>l</a>
+              <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+              </button>
+              <ul class="nav-menu">
+                <li class="nav-menu-item">
+                  <a href="fallecimiento.html" class="nav-menu-link nav-link">Fallecimiento</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="colleccion.html" class="nav-menu-link nav-link">Collección</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="negocio.html" class="nav-menu-link nav-link">Arte</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="aprender.html" class="nav-menu-link nav-link"
+                      >Más</a
+                    >
+                  </li>
+                <li class="nav-menu-item">
+                  <a href="contacto.html" class="nav-menu-link nav-link nav-menu-link_active"
+                    >Contácto</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+        
+        <div id="wrapper">
+            <div class="andy-principal">
+             <h2>Unete!</h2>   
+              <p>La Galería Miller está buscando voluntarios para ayudar con esta exhibición. Por favor, rellene el siguiente formulario si está interesado.
+              </br> Complete la sección requerida (*) al enviar.</p> 
+                <form id="contact_form" name="contact_form" action="http://www.jacobo.cmu.edu/cgi-bin/mailto" method="post" enctype="plain/text">
+                  <div class="form-input">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" placeholder="Escriba aqui su nombre..." required />
+                   </div>
+                  <div class="form-input">
+                    <label for="state">Estado:</label>
+                    <input type="text" name="state" id="state" placeholder="Escriba aqui su Estado..." />
+                  </div> 
+                  <div class="form-input">
+                    <label for="email">Dirección Email:</label>
+                    <input type="email" name="email" required placeholder="Enter a valid email address" placeholder="Escriba aqui su dirección mail...">
+                  </div>
+                  <div class="form-input">
+                    <label for="ZIP">Código ZIP:</label>
+                    <input name="ZIP" maxlength="5" minlength= "5" class="zip number" type="text" placeholder="Escriba aqui su código ZIP" />
+                  </div>
+                    <label for="comment">Comentarios:</label>
+                    <textarea name="comment" id="comment" required rows="7" cols="30" >
+                    </textarea>
+                    <div class="form-input">
+
+                      <input type="submit" value="Enviar" />    
+                    </div>
+              </form>
+              <p>&copy; Jacobo, 2022.</p>
+            </div>
+        </div>
+
+    </body>
+
+    <script defer src="./js/index.js"></script>
+    <script
+    src="https://kit.fontawesome.com/7e5b2d153f.js"
+    crossorigin="anonymous"
+  ></script>
+  
+</html>
